@@ -23,6 +23,7 @@
         $row = $db->getALL("SELECT * FROM tblkategori ORDER BY kategori ASC");
     
     ?>
+    
     <form action="" method="post">
     
         <select name="opsi" id="" onchange="this.form.submit()">
@@ -80,7 +81,7 @@
                     <td><?php echo $r['harga'] ?></td>
                     <td><img style="width:120px;" src="../upload/<?php echo $r['gambar'] ?>" alt=""></td>
                     <td><a href="?f=menu&m=delete&id=<?php echo $r['idmenu'] ?>">Delete</a></td>
-                    <td><a href="?f=menu&m=uptade&id=<?php echo $r['idmenu'] ?>">Uptade</a></td>
+                    <td><a href="?f=menu&m=update&id=<?php echo $r['idmenu'] ?>">Update</a></td>
                 </tr>
             <?php endforeach ?>
         <?php } ?>

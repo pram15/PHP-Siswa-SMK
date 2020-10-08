@@ -11,7 +11,7 @@
 
 
 ?>
-<h3>Uptade Kategori</h3>
+<h3>Update Kategori</h3>
 <div  class="form-group">
     <form action="" method="post">
         <div  class="form-group w-50">

@@ -28,18 +28,20 @@
             <th>No</th>
             <th>Kategori</th>
             <th>Delete</th>
-            <th>Uptade</th>
+            <th>Update</th>
         </tr>
     </thead>
     <tbody>
+        <?php if(!empty($row)) { ?>
         <?php foreach($row as $r): ?>
             <tr>
                 <td><?php echo $no++ ?></td>
                 <td><?php echo $r['kategori'] ?></td>
                 <td><a href="?f=kategori&m=delete&id=<?php echo $r['idkategori'] ?>">Delete</a></td>
-                <td><a href="?f=kategori&m=uptade&id=<?php echo $r['idkategori'] ?>">Uptade</a></td>
+                <td><a href="?f=kategori&m=update&id=<?php echo $r['idkategori'] ?>">Update</a></td>
             </tr>
         <?php endforeach ?>
+        <?php } ?>
     </tbody>
 
 </table>
